@@ -1,1 +1,770 @@
+# Updated Portfolio File (index.html)
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Sanket Thakare | Portfolio</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#020617;
+    padding:15px 0;
+}
+
+.navbar-brand{
+    font-size:30px;
+    font-weight:bold;
+    color:#38bdf8 !important;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    color:#38bdf8 !important;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(to right,#020617,#0f172a);
+    padding-top:100px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:bold;
+    animation:slideLeft 1s ease;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    color:#cbd5e1;
+    margin-top:20px;
+    font-size:18px;
+    line-height:1.8;
+    animation:fadeIn 2s ease;
+}
+
+.btn-custom{
+    background:#38bdf8;
+    color:black;
+    padding:12px 30px;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-custom:hover{
+    background:#0ea5e9;
+    transform:translateY(-3px);
+}
+
+.profile-box{
+    text-align:center;
+}
+
+.profile-box img{
+    width:320px;
+    height:420px;
+    object-fit:cover;
+    border-radius:25px;
+    border:4px solid #38bdf8;
+    box-shadow:0 0 30px rgba(56,189,248,0.5);
+    animation:zoomIn 1.2s ease;
+}
+
+/* Sections */
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#38bdf8;
+    font-weight:bold;
+}
+
+/* Cards */
+
+.card-custom{
+    background:#1e293b;
+    border:none;
+    border-radius:20px;
+    padding:30px;
+    transition:0.4s;
+    height:100%;
+}
+
+.card-custom:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(56,189,248,0.3);
+}
+
+/* Skills */
+
+.skill{
+    display:inline-block;
+    background:#334155;
+    padding:12px 22px;
+    border-radius:30px;
+    margin:10px;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.skill:hover{
+    background:#38bdf8;
+    color:black;
+}
+
+/* Timeline */
+
+.timeline{
+    border-left:3px solid #38bdf8;
+    padding-left:30px;
+}
+
+.timeline-item{
+    margin-bottom:40px;
+    position:relative;
+}
+
+.timeline-item::before{
+    content:'';
+    width:18px;
+    height:18px;
+    background:#38bdf8;
+    border-radius:50%;
+    position:absolute;
+    left:-40px;
+    top:5px;
+}
+
+/* Contact */
+
+.contact-box{
+    background:#1e293b;
+    padding:40px;
+    border-radius:20px;
+}
+
+.form-control{
+    background:#0f172a;
+    border:1px solid #334155;
+    color:white;
+}
+
+.form-control:focus{
+    background:#0f172a;
+    color:white;
+    border-color:#38bdf8;
+    box-shadow:none;
+}
+
+/* Footer */
+
+.footer{
+    background:#020617;
+    text-align:center;
+    padding:20px;
+}
+
+.social-icons a{
+    color:white;
+    margin-right:15px;
+    font-size:22px;
+    transition:0.3s;
+}
+
+.social-icons a:hover{
+    color:#38bdf8;
+}
+
+@keyframes slideLeft{
+    from{
+        opacity:0;
+        transform:translateX(-80px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes zoomIn{
+    from{
+        opacity:0;
+        transform:scale(0.8);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .profile-box{
+        margin-top:50px;
+    }
+
+    .profile-box img{
+        width:260px;
+        height:350px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">Sanket</a>
+
+<button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#skills">Skills</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#experience">Experience</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#projects">Projects</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<h1>Hello, I'm <span>Sanket Thakare</span></h1>
+
+<h3 class="mt-3">Full Stack Developer</h3>
+
+<p>
+Passionate Full Stack Developer with experience in Java,
+Python, PHP, React.js, Laravel, Spring Boot, Django,
+Flask and MySQL. I build responsive and modern web applications.
+</p>
+
+<div class="mt-4">
+
+<a href="#contact" class="btn btn-custom me-3">
+Hire Me
+</a>
+
+<a href="c:\Users\hp\Downloads\sanket thakare resume.pdf.pdf" download class="btn btn-outline-info">
+Download Resume
+</a>
+
+</div>
+
+<div class="social-icons mt-4">
+
+<a href="https://linkedin.com/in/sanket-thakare-0b5172246" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://github.com/" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://instagram.com/" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6 profile-box">
+
+<img src="c:\Users\hp\Downloads\Confident man in crisp attire.png" alt="Sanket Thakare">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-title">
+<h2>About Me</h2>
+</div>
+
+<div class="row">
+
+<div class="col-lg-6 mb-4">
+
+<div class="card-custom">
+
+<h4>Who Am I?</h4>
+
+<p class="mt-3">
+Results-driven Full Stack Developer with strong knowledge
+of backend and frontend technologies.
+Experienced in developing REST APIs,
+responsive UI designs, and scalable applications.
+</p>
+
+<p>
+Quick learner, team player, and passionate software developer
+looking for opportunities to grow professionally.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-6 mb-4">
+
+<div class="card-custom">
+
+<h4>Personal Information</h4>
+
+<ul class="list-unstyled mt-4">
+
+<li class="mb-3">
+<strong>Name :</strong> Sanket Thakare
+</li>
+
+<li class="mb-3">
+<strong>Location :</strong> Nashik, Maharashtra
+</li>
+
+<li class="mb-3">
+<strong>Email :</strong> thakaresu612@gmail.com
+</li>
+
+<li class="mb-3">
+<strong>Phone :</strong> +91 9322249615
+</li>
+
+<li class="mb-3">
+<strong>Languages :</strong> English, Hindi, Marathi
+</li>
+
+<li class="mb-3">
+<strong>Availability :</strong> Full Time
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Skills -->
+
+<section id="skills">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Technical Skills</h2>
+</div>
+
+<div class="text-center">
+
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">Bootstrap</div>
+<div class="skill">JavaScript</div>
+<div class="skill">jQuery</div>
+<div class="skill">React.js</div>
+<div class="skill">PHP</div>
+<div class="skill">Laravel</div>
+<div class="skill">Python</div>
+<div class="skill">Django</div>
+<div class="skill">Flask</div>
+<div class="skill">Java</div>
+<div class="skill">Spring Boot</div>
+<div class="skill">REST API</div>
+<div class="skill">MySQL</div>
+<div class="skill">Git & GitHub</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Experience -->
+
+<section id="experience">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Experience</h2>
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h4>Junior Software Engineer Intern</h4>
+
+<h6>Cravita Technologies India Pvt. Ltd. | Pune</h6>
+
+<small>Jul 2025 - Present</small>
+
+<p class="mt-3">
+Worked on backend services using Java and Spring Boot.
+Developed REST APIs, SQL queries, debugging,
+Git version control, and Agile workflow.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+
+<section id="projects">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Projects</h2>
+</div>
+
+<div class="row">
+
+<div class="col-lg-6 mb-4">
+
+<div class="card-custom">
+
+<h4>Online Shopping Management System</h4>
+
+<p class="mt-3">
+Developed a complete e-commerce platform with cart system,
+order tracking, authentication, admin dashboard and secure database management.
+</p>
+
+<h6>Tech Stack :</h6>
+
+<p>
+PHP, React.js, JavaScript, HTML, CSS, MySQL
+</p>
+
+<a href="c:\Users\hp\OneDrive\ドキュメント\online shopping management system" target="_blank" class="btn btn-outline-info">
+Live Demo
+</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-6 mb-4">
+
+<div class="card-custom">
+
+<h4>REST API Development</h4>
+
+<p class="mt-3">
+Built scalable REST APIs using Spring Boot, Flask and Django
+with authentication, CRUD operations and database integration.
+</p>
+
+<h6>Tech Stack :</h6>
+
+<p>
+Spring Boot, Django, Flask, MySQL
+</p>
+
+<a href="#" target="_blank" class="btn btn-outline-info">
+View Project
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Education -->
+
+<section id="education">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Education</h2>
+</div>
+
+<div class="row">
+
+<div class="col-lg-4 mb-4">
+
+<div class="card-custom text-center">
+
+<h4>B.Sc Computer Science</h4>
+
+<p>2025</p>
+
+<p>Savitribai Phule Pune University</p>
+
+<h5>Grade : A</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 mb-4">
+
+<div class="card-custom text-center">
+
+<h4>HSC Science</h4>
+
+<p>2022</p>
+
+<h5>67%</h5>
+
+</div>
+
+</div>
+
+<div class="col-lg-4 mb-4">
+
+<div class="card-custom text-center">
+
+<h4>SSC</h4>
+
+<p>2020</p>
+
+<h5>75%</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Contact Me</h2>
+</div>
+
+<div class="row justify-content-center">
+
+<div class="col-lg-8">
+
+<div class="contact-box">
+
+<form>
+
+<div class="row">
+
+<div class="col-md-6 mb-3">
+<input type="text" class="form-control" placeholder="Your Name">
+</div>
+
+<div class="col-md-6 mb-3">
+<input type="email" class="form-control" placeholder="Your Email">
+</div>
+
+<div class="col-12 mb-3">
+<input type="text" class="form-control" placeholder="Subject">
+</div>
+
+<div class="col-12 mb-3">
+<textarea class="form-control" rows="5" placeholder="Message"></textarea>
+</div>
+
+<div class="col-12">
+<button type="submit" class="btn btn-custom">
+Send Message
+</button>
+</div>
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<div class="footer">
+
+<p>
+© 2026 Sanket Thakare | All Rights Reserved
+</p>
+
+</div>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $(".card-custom").hide();
+
+    $(".card-custom").each(function(index){
+
+        $(this).delay(200 * index).fadeIn(1000);
+
+    });
+
+    $(".nav-link").click(function(){
+
+        $(".navbar-collapse").collapse('hide');
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
+```
+
+## Important
+
+Put these files in the same folder:
+
+* index.html
+* profile.png
+* sanket-thakare-resume.pdf
